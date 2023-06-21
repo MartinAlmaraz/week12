@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body class="container">
+  <div id="app" class="jumbotron">
+    <h2>Cars</h2>
+    <form id="form">
+      <input type="text" id="make" name="make" placeholder="Make"> <br>
+      <br>
+      <input type="text" id="model" name="model" placeholder="Model"> <br>
+      <br>
+      <input type="text" id="year" name="year" placeholder="Year"> <br>
+      <br>
+      <button type="button" id="btn"
+      onclick="submit()">Submit</button>
+      <input type="reset" value="Delete">
+  </div>
+    </form>
     
+  <br>
+    <fieldset>
+      <h2>Car List</h2>
+
+    <table class="table table-bordered table-dark" id="table">
+      <tr class="table-info">
+        <td>Make</td>
+        <td>Model</td>
+        <td>Year</td>
+        <td>Edit/Delete</td>
+      
+      </tr>
+    </table>
+    </fieldset>
+   
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+   <script src="index.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
