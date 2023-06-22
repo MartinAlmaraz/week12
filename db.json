@@ -1,0 +1,29 @@
+{
+  "cars": [
+    {
+      "make": "Toyota",
+      "model": "Tacoma",
+      "year": "2022"
+    },
+    {
+      "make": "Impala",
+      "model": "Chevy",
+      "year": "1964"
+    },
+    {
+      "make": "Dodge",
+      "model": "Dart",
+      "year": "1973"
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": "1971"
+    },
+    {
+      "make": "Nissan",
+      "model": "GT-R",
+      "year": "2010"
+    }
+  ]
+}

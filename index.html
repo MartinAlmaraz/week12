@@ -7,35 +7,47 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container">
+<form>
   <div id="app" class="jumbotron">
     <h2>Cars</h2>
-    <form id="form">
-      <input type="text" id="make" name="make" placeholder="Make"> <br>
-      <br>
-      <input type="text" id="model" name="model" placeholder="Model"> <br>
-      <br>
-      <input type="text" id="year" name="year" placeholder="Year"> <br>
-      <br>
-      <button type="button" id="btn"
-      onclick="submit()">Submit</button>
-      <input type="reset" value="Delete">
+    <label for="make">Make</label>
+    <input id="make" placeholder="Make of Car"/>
+    <br>
+    <label for="model">Model</label>
+    <input id="model" placeholder="Model of Car"/>
+    <br>
+    <label for="year">Year</label>
+    <input id="year" placeholder="Car Year"/>
+    <button>Submit</button>
   </div>
-    </form>
-    
-  <br>
-    <fieldset>
-      <h2>Car List</h2>
+ </form>
+<form>
+  <h4>Update Cars</h4>
+  <div>
+    <label for="updateMake">Car Make</label>
+    <input id="updateMake"/>
+  </div>
+  <div>
+    <label for="updateYear">Year</label>
+    <input id="updateYear"/>
+  </div>
+  <button id="updateCar">Update</button>
+</form>
+<br>
+  <h2>Car List</h2>
 
     <table class="table table-bordered table-dark" id="table">
-      <tr class="table-info">
-        <td>Make</td>
-        <td>Model</td>
-        <td>Year</td>
-        <td>Edit/Delete</td>
-      
-      </tr>
+      <thead>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Delete</th>
+      </thead>
+      <tbody>
+
+      </tbody>
     </table>
-    </fieldset>
+    
    
    <script src="node_modules/jquery/dist/jquery.js"></script>
    <script src="index.js"></script>
