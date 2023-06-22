@@ -8,7 +8,7 @@
 </head>
 <body class="container">
 <form>
-  <div id="app" class="jumbotron">
+  <div class="jumbotron">
     <h2>Cars</h2>
     <label for="make">Make</label>
     <input id="make" placeholder="Make of Car"/>
@@ -18,16 +18,24 @@
     <br>
     <label for="year">Year</label>
     <input id="year" placeholder="Car Year"/>
-    <button>Submit</button>
+    <button id="submitCar">Submit</button>
   </div>
  </form>
 <form>
   <h4>Update Cars</h4>
   <div>
-    <label for="updateMake">Car Make</label>
-    <input id="updateMake"/>
+    <label for="updateId">ID</label>
+    <input id="updateId"/>
   </div>
   <div>
+    <label for="updateMake">Car Make</label>
+    <input id="updateMake"/>
+    </div>
+    <div>
+      <label for="updateModel">Car Model</label>
+      <input id="updateModel"/>
+    </div>
+    <div>
     <label for="updateYear">Year</label>
     <input id="updateYear"/>
   </div>
@@ -38,6 +46,7 @@
 
     <table class="table table-bordered table-dark" id="table">
       <thead>
+        <th>Id</th>
         <th>Make</th>
         <th>Model</th>
         <th>Year</th>
